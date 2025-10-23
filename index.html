@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Tahmin Oyunu (Python Koduyla Uyumlu)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sayı Tahmin Oyunu</h1>
+        <div id="gameSetup">
+            <p>Tahmin oyununu 1 ile istediğiniz sayı aralığında oynayabilirsiniz.</p>
+            <label for="rangeInput">1 ile kaç aralığında tahmin oyunu oynayalım?: </label>
+            <input type="number" id="rangeInput" min="1" value="100">
+            <button id="setRangeButton">Aralığı Belirle</button>
+            <p id="rangeMessage" style="color: red;"></p>
+        </div>
+
+        <div id="userNumberSetup" style="display: none;">
+            <p>Lütfen bilgisayarın tahmin etmesi için 1 ile <span id="displayRange"></span> arasında bir sayı tutun.</p>
+            <label for="userNumberInput">Tuttuğunuz sayı: </label>
+            <input type="number" id="userNumberInput" min="1">
+            <button id="setUserNumberButton">Sayıyı Onayla</button>
+            <p id="userNumberMessage" style="color: red;"></p>
+        </div>
+
+        <div id="gameArea" style="display: none;">
+            <h2>Oyun Alanı</h2>
+            <p>Oyundan çıkmak için tahmininize 0 girin.</p>
+
+            <div class="player-section" id="pcPlayerSection">
+                <h3>Bilgisayarın Sırası</h3>
+                <span id="pcGuessDisplay" class="pc-guess-box"></span>
+                <p>Bilgisayarın Tahminleri: <span id="pcGuessesList"></span></p>
+                <p>Bilgisayarın Tahmin Sayısı: <span id="pcGuessCount">0</span></p>
+                <p>Bilgisayarın Puanı: <span id="pcScore">100</span></p>
+            </div>
+
+            <div class="player-section" id="humanPlayerSection">
+                <h3>Sizin Sıranız</h3>
+                <label for="playerGuessInput">Tahmininiz: </label>
+                <input type="number" id="playerGuessInput" min="0">
+                <button id="playerGuessButton">Tahmin Et</button>
+                <p id="playerMessage"></p>
+                <p>Yaptığınız Tahminler: <span id="playerGuessesList"></span></p>
+                <p>Yaptığınız Tahmin Sayısı: <span id="playerGuessCount">0</span></p>
+                <p>Puanınız: <span id="playerScore">100</span></p>
+            </div>
+
+            <button id="resetGameButton" style="display: none;">Yeni Oyun</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
