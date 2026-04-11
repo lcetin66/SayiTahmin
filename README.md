@@ -1,3 +1,4 @@
-Oyun basit sayi tahmin oyunu. Belirlemis oldugunuz bir sayi araligi ve programin tahmin etmesini istediginiz sayiyi girdi olarak sizden istiyor. 
-Programin herhangi bir algoritmasi yok. Sadece belirlediginiz sayi araligindaki sayilari listesine ekliyor ve onlarin arasindan rasgele bir sayiyi secip sizin sayinizla karsilastiriyor. 
-Sizin tahmin ettiginiz sayi ile bir dahaki tahmin edeceginiz sayi ile ilgili ip uclari veriyor.
+The game is a simple number guessing game. It asks you to enter a range of numbers you’ve specified and the number you want the program to guess. The program has no specific algorithm. It simply adds the numbers within the range you specified to a list and randomly selects one of them to compare with your number. It provides hints related to the number you guessed and the next number you will guess.
+
+
+Translated with DeepL.com (free version)
