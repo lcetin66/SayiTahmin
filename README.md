@@ -1,2 +1,2 @@
 The game is a simple number guessing game. It asks you to enter a range of numbers you’ve specified and the number you want the program to guess. The program has no specific algorithm. It simply adds the numbers within the range you specified to a list and randomly selects one of them to compare with your number. It provides hints related to the number you guessed and the next number you will guess.
-by Cetin
+by 3CCS.COM
